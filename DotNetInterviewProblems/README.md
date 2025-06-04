@@ -30,6 +30,8 @@ Console.WriteLine($"Window: {window}");
 
 Rebuild and run to see the result.
 
+For a visual overview, see the [workflow diagram](docs/WORKFLOW.md).
+
 ## Problems Reference
 
 Below is a list of classic LeetCode problems that this project aims to cover.
