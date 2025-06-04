@@ -7,7 +7,8 @@ using EnterpriseApi.Models;
 namespace EnterpriseApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]/[action]")]
+
+    [Route("api/[controller]")]
     [Authorize]
     public class TodoItemsController : ControllerBase
     {
@@ -18,13 +19,14 @@ namespace EnterpriseApi.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet("GetTodoItems")]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
         {
             return await _context.TodoItems.ToListAsync();
         }
 
-        [HttpGet("{id}")]
+
+        [HttpGet("GetTodoItem/{id}")]
         public async Task<ActionResult<TodoItem>> GetTodoItem(int id)
         {
             var item = await _context.TodoItems.FindAsync(id);
@@ -35,7 +37,8 @@ namespace EnterpriseApi.Controllers
             return item;
         }
 
-        [HttpPost]
+
+        [HttpPost("CreateTodoItem")]
         public async Task<ActionResult<TodoItem>> CreateTodoItem(TodoItem item)
         {
             _context.TodoItems.Add(item);
@@ -43,7 +46,8 @@ namespace EnterpriseApi.Controllers
             return CreatedAtAction(nameof(GetTodoItem), new { id = item.Id }, item);
         }
 
-        [HttpPut("{id}")]
+
+        [HttpPut("UpdateTodoItem/{id}")]
         public async Task<IActionResult> UpdateTodoItem(int id, TodoItem item)
         {
             if (id != item.Id)
@@ -64,7 +68,7 @@ namespace EnterpriseApi.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteTodoItem/{id}")]
         public async Task<IActionResult> DeleteTodoItem(int id)
         {
             var item = await _context.TodoItems.FindAsync(id);

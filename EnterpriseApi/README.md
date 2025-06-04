@@ -4,7 +4,9 @@ This is a sample ASP.NET Core Web API using Entity Framework Core with SQL Serve
 
 ## Building
 
+
 Requires the .NET 8 SDK to be installed.
+
 
 ```bash
 dotnet restore
