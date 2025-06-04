@@ -7,6 +7,7 @@ using EnterpriseApi.Models;
 namespace EnterpriseApi.Controllers
 {
     [ApiController]
+
     [Route("api/[controller]")]
     [Authorize]
     public class TodoItemsController : ControllerBase
@@ -24,6 +25,7 @@ namespace EnterpriseApi.Controllers
             return await _context.TodoItems.ToListAsync();
         }
 
+
         [HttpGet("GetTodoItem/{id}")]
         public async Task<ActionResult<TodoItem>> GetTodoItem(int id)
         {
@@ -35,6 +37,7 @@ namespace EnterpriseApi.Controllers
             return item;
         }
 
+
         [HttpPost("CreateTodoItem")]
         public async Task<ActionResult<TodoItem>> CreateTodoItem(TodoItem item)
         {
@@ -42,6 +45,7 @@ namespace EnterpriseApi.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetTodoItem), new { id = item.Id }, item);
         }
+
 
         [HttpPut("UpdateTodoItem/{id}")]
         public async Task<IActionResult> UpdateTodoItem(int id, TodoItem item)

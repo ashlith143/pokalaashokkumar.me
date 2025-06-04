@@ -1,0 +1,5 @@
+# Ignore build outputs
+**/bin/
+**/obj/
+# Ignore packages
+packages-microsoft-prod.deb
