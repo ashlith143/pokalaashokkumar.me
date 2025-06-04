@@ -21,6 +21,11 @@ Edit `Program.cs` to call any algorithm with your own input. For example:
 int[] prices = {7, 1, 5, 3, 6, 4};
 int profit = BestTimeToBuyAndSellStock.MaxProfit(prices);
 Console.WriteLine($"Profit: {profit}");
+
+string s = "ADOBECODEBANC";
+string t = "ABC";
+string window = MinimumWindowSubstring.MinWindow(s, t);
+Console.WriteLine($"Window: {window}");
 ```
 
 Rebuild and run to see the result.

@@ -16,3 +16,19 @@ Console.WriteLine("Product of Array Except Self example:");
 int[] arr = {1, 2, 3, 4};
 int[] products = ProductOfArrayExceptSelf.Solve(arr);
 Console.WriteLine($"[{string.Join(", ", products)}]");
+
+Console.WriteLine("Longest Substring Without Repeating Characters example:");
+string str = "abcabcbb";
+int len = LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(str);
+Console.WriteLine($"Length: {len}");
+
+Console.WriteLine("Minimum Window Substring example:");
+string s = "ADOBECODEBANC";
+string tStr = "ABC";
+string window = MinimumWindowSubstring.MinWindow(s, tStr);
+Console.WriteLine($"Window: {window}");
+
+Console.WriteLine("Trapping Rain Water example:");
+int[] bars = {0,1,0,2,1,0,1,3,2,1,2,1};
+int water = TrappingRainWater.Trap(bars);
+Console.WriteLine($"Trapped water: {water}");
