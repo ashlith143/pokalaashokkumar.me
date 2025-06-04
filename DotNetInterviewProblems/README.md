@@ -13,6 +13,18 @@ dotnet build
 dotnet run
 ```
 
+### Running with Custom Data
+
+Edit `Program.cs` to call any algorithm with your own input. For example:
+
+```csharp
+int[] prices = {7, 1, 5, 3, 6, 4};
+int profit = BestTimeToBuyAndSellStock.MaxProfit(prices);
+Console.WriteLine($"Profit: {profit}");
+```
+
+Rebuild and run to see the result.
+
 ## Problems Reference
 
 Below is a list of classic LeetCode problems that this project aims to cover.
@@ -71,3 +83,11 @@ found under the `Problems/` folder.
 ### Backtracking
 
 20. **Subsets** – Generate all subsets of an array.
+
+## Running Tests
+
+Unit tests are located in the `DotNetInterviewProblems.Tests` project. Run them with:
+
+```bash
+dotnet test DotNetInterviewProblems.Tests
+```
