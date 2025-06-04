@@ -2,9 +2,13 @@ using System;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Calculates how much rain water can be trapped between elevation bars.
+    /// Uses a two-pointer technique that tracks the maximum height from both
+    /// ends. Runs in O(n) time with constant space.
+    /// </summary>
     public static class TrappingRainWater
     {
-        // Returns amount of trapped rain water given bar heights
         public static int Trap(int[] height)
         {
             if (height == null || height.Length == 0) return 0;

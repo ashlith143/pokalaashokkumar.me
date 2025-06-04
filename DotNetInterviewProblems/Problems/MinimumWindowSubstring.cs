@@ -3,9 +3,13 @@ using System.Collections.Generic;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Finds the smallest substring of <paramref name="s"/> that contains all
+    /// characters of <paramref name="t"/>. Implements the sliding window
+    /// technique with character counts for an O(n) time solution.
+    /// </summary>
     public static class MinimumWindowSubstring
     {
-        // Returns the minimum window in s which contains all characters of t
         public static string MinWindow(string s, string t)
         {
             if (string.IsNullOrEmpty(s) || string.IsNullOrEmpty(t) || t.Length > s.Length)

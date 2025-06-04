@@ -3,9 +3,13 @@ using System.Collections.Generic;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Determines the length of the longest substring without repeating
+    /// characters. Maintains a sliding window and dictionary of last seen
+    /// indices for O(n) time complexity.
+    /// </summary>
     public static class LongestSubstringWithoutRepeatingCharacters
     {
-        // Returns length of the longest substring without repeating characters
         public static int LengthOfLongestSubstring(string s)
         {
             if (string.IsNullOrEmpty(s)) return 0;

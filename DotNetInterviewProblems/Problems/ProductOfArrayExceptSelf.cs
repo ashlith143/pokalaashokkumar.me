@@ -2,9 +2,13 @@ using System;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Returns a new array where each element is the product of all other
+    /// elements in the input array. Utilizes prefix and suffix products for an
+    /// O(n) solution without using division.
+    /// </summary>
     public static class ProductOfArrayExceptSelf
     {
-        // Returns array where each element is product of all other elements
         public static int[] Solve(int[] nums)
         {
             int n = nums.Length;

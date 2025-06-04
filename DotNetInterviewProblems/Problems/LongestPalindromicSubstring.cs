@@ -2,9 +2,13 @@ using System;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Returns the longest palindromic substring within <paramref name="s"/>.
+    /// Uses an expand-around-center approach for each index, resulting in
+    /// O(n^2) time and constant space complexity.
+    /// </summary>
     public static class LongestPalindromicSubstring
     {
-        // Returns the longest palindromic substring in s
         public static string LongestPalindrome(string s)
         {
             if (string.IsNullOrEmpty(s)) return string.Empty;

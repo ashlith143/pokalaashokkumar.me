@@ -2,9 +2,12 @@ using System.Collections.Generic;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Determines whether two strings are anagrams by counting character
+    /// occurrences with a dictionary. Runs in O(n) time.
+    /// </summary>
     public static class ValidAnagram
     {
-        // Returns true if t is an anagram of s
         public static bool IsAnagram(string s, string t)
         {
             if (s.Length != t.Length) return false;

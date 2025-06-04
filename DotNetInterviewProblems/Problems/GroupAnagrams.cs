@@ -3,9 +3,14 @@ using System.Collections.Generic;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Groups words that are anagrams of each other. Sorts each word to create
+    /// a canonical key and collects words with the same key using a
+    /// dictionary. Complexity is O(n k log k) where k is the average word
+    /// length.
+    /// </summary>
     public static class GroupAnagrams
     {
-        // Groups anagrams together
         public static IList<IList<string>> Group(string[] strs)
         {
             var map = new Dictionary<string, List<string>>();
