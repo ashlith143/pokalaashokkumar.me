@@ -32,3 +32,34 @@ Console.WriteLine("Trapping Rain Water example:");
 int[] bars = {0,1,0,2,1,0,1,3,2,1,2,1};
 int water = TrappingRainWater.Trap(bars);
 Console.WriteLine($"Trapped water: {water}");
+
+Console.WriteLine("Valid Anagram example:");
+Console.WriteLine(ValidAnagram.IsAnagram("anagram", "nagaram"));
+
+Console.WriteLine("Valid Palindrome example:");
+Console.WriteLine(ValidPalindrome.IsPalindrome("A man, a plan, a canal: Panama"));
+
+Console.WriteLine("Group Anagrams example:");
+string[] words = {"eat", "tea", "tan", "ate", "nat", "bat"};
+var grouped = GroupAnagrams.Group(words);
+foreach (var group in grouped)
+{
+    Console.WriteLine(string.Join(",", group));
+}
+
+Console.WriteLine("Longest Palindromic Substring example:");
+Console.WriteLine(LongestPalindromicSubstring.LongestPalindrome("babad"));
+
+Console.WriteLine("String Compression example:");
+char[] chars = {'a','a','b','b','c','c','c'};
+int newLen = StringCompression.Compress(chars);
+Console.WriteLine($"{newLen}: {new string(chars,0,newLen)}");
+
+Console.WriteLine("Reverse Words in a String example:");
+Console.WriteLine(ReverseWordsInAString.ReverseWords("the sky is blue"));
+
+Console.WriteLine("strStr example:");
+Console.WriteLine(StrStr.Find("hello", "ll"));
+
+Console.WriteLine("Count and Say example:");
+Console.WriteLine(CountAndSay.Generate(4));
