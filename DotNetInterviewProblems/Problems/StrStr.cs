@@ -1,8 +1,12 @@
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Searches for the first occurrence of <paramref name="needle"/> within
+    /// <paramref name="haystack"/> using a simple substring comparison.
+    /// This naive approach runs in O(n*m) time.
+    /// </summary>
     public static class StrStr
     {
-        // Returns index of first occurrence of needle in haystack or -1
         public static int Find(string haystack, string needle)
         {
             if (string.IsNullOrEmpty(needle)) return 0;

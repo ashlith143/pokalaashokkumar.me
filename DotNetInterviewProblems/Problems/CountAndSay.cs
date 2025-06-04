@@ -2,9 +2,13 @@ using System.Text;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Generates the n-th term of the "count and say" sequence. Each
+    /// iteration compresses the previous term by counting consecutive digits.
+    /// Complexity is proportional to the size of the generated strings.
+    /// </summary>
     public static class CountAndSay
     {
-        // Generates the n-th term of the count and say sequence
         public static string Generate(int n)
         {
             if (n <= 0) return string.Empty;

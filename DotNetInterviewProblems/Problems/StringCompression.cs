@@ -1,8 +1,12 @@
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Performs in-place run length encoding on the given character array and
+    /// returns the new length. Utilizes two pointers for O(n) processing time
+    /// and O(1) extra space.
+    /// </summary>
     public static class StringCompression
     {
-        // Compresses the array in place and returns the new length
         public static int Compress(char[] chars)
         {
             if (chars.Length == 0) return 0;

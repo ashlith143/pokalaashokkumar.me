@@ -3,9 +3,13 @@ using System.Linq;
 
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Reverses the order of words in the provided string. Splits on spaces,
+    /// reverses the resulting array and joins it back together. Runs in O(n)
+    /// time where n is the length of the string.
+    /// </summary>
     public static class ReverseWordsInAString
     {
-        // Reverses the words in a string
         public static string ReverseWords(string s)
         {
             var words = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);

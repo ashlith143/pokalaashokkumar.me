@@ -2,9 +2,13 @@ using System;
 using System.Collections.Generic;
 namespace DotNetInterviewProblems.Problems
 {
+    /// <summary>
+    /// Given an array of integers and a target value, returns the indices of
+    /// the two numbers that sum to the target. Uses a dictionary to store the
+    /// complement of each element for an overall O(n) solution.
+    /// </summary>
     public static class TwoSum
     {
-        // Returns indices of the two numbers such that they add up to target
         public static int[] Solve(int[] nums, int target)
         {
             var map = new Dictionary<int, int>();

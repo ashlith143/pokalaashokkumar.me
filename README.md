@@ -14,3 +14,11 @@ Each project can be built with the .NET 8 SDK:
 cd <ProjectName>
 dotnet build
 ```
+
+## Running Tests
+
+Make sure the .NET 8 SDK is installed. Run the unit tests with:
+
+```bash
+dotnet test DotNetInterviewProblems.Tests/DotNetInterviewProblems.Tests.csproj -v minimal
+```
