@@ -9,3 +9,5 @@ Each topic contains multiple interview questions with concise answers and real-w
 - [Basics](Basics/README.md) – core language and runtime questions
 - [OOP](OOP/README.md) – object-oriented programming concepts in .NET
 - [ASP.NET Core](ASPNetCore/README.md) – web development with ASP.NET Core
+- [System Design](SystemDesign/README.md) – designing scalable architectures
+
