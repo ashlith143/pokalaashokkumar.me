@@ -304,3 +304,4 @@ Use the logging APIs in `Program.cs` to add providers such as Console or Applica
 Configure JWT bearer authentication in `Program.cs` and issue tokens to clients upon login. Clients include the token in the `Authorization` header so middleware can validate and authorize requests.
 
 
+
