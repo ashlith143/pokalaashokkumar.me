@@ -303,5 +303,3 @@ Use the logging APIs in `Program.cs` to add providers such as Console or Applica
 ### How do you secure an API using JWT authentication?
 Configure JWT bearer authentication in `Program.cs` and issue tokens to clients upon login. Clients include the token in the `Authorization` header so middleware can validate and authorize requests.
 
-
-
